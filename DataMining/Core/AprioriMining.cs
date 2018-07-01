@@ -78,12 +78,15 @@ namespace DataMining.Core
                         itemset.Add(itemFre[0]);
                     }
                 }
-                T.Add(itemset);
-                foreach (Itemset items in subsets)
+                if (itemset.Count > 0)
                 {
-                    if (itemset.Contains(items))
+                    T.Add(itemset);
+                    foreach (Itemset items in subsets)
                     {
-                        items.Support++;
+                        if (itemset.Contains(items))
+                        {
+                            items.Support++;
+                        }
                     }
                 }
             }
@@ -92,7 +95,7 @@ namespace DataMining.Core
             {
                 if (items.Count > 0)
                 {
-                    items.Support = (items.Support/(double)T.Count) * 100.0;
+                    items.Support = (items.Support/(double)db.Count) * 100.0;
                     if (items.Support >= supportThreshold)
                         L.Add(items);
                 }
@@ -114,7 +117,7 @@ namespace DataMining.Core
                         AssociationRule rule = new AssociationRule();
                         rule.X.AddRange(subset);
                         rule.Y.AddRange(itemset.Remove(subset));
-                        rule.Support = db.FindSupport(itemset);
+                        rule.Support = itemset.Support;// db.FindSupport(itemset);
                         rule.Confidence = confidence;
                         if (rule.X.Count > 0 && rule.Y.Count > 0)
                         {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Numerics;
 
 namespace DataMining.Core
 {
@@ -12,8 +13,8 @@ namespace DataMining.Core
         {
             ItemsetCollection subsets = new ItemsetCollection();
 
-            int subsetCount = (int)Math.Pow(2, itemset.Count);
-            for (int i = 0; i < subsetCount; i++)
+            BigInteger subsetCount = (BigInteger)Math.Pow(2, itemset.Count);
+            for (BigInteger i = 0; i < subsetCount; i++)
             {
                 if (n == 0 || GetOnCount(i, itemset.Count) == n)
                 {
@@ -33,13 +34,13 @@ namespace DataMining.Core
 
             return (subsets);
         }
-        public static int GetBit(int value, int position)
+        public static int GetBit(BigInteger value, int position)
         {
-            int bit = value & (int)Math.Pow(2, position);
+            BigInteger bit = value & (BigInteger)Math.Pow(2, position);
             return (bit > 0 ? 1 : 0);
         }
 
-        public static string DecimalToBinary(int value, int length)
+        public static string DecimalToBinary(BigInteger value, int length)
         {
             string binary = string.Empty;
             for (int position = 0; position < length; position++)
@@ -49,7 +50,7 @@ namespace DataMining.Core
             return (binary);
         }
 
-        public static int GetOnCount(int value, int length)
+        public static int GetOnCount(BigInteger value, int length)
         {
             string binary = DecimalToBinary(value, length);
             return (from char c in binary.ToCharArray()
