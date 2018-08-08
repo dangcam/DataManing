@@ -67,6 +67,7 @@
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.xtraTabPageFPGrowthSongSong = new DevExpress.XtraTab.XtraTabPage();
             this.layoutControlFPGrowth = new DevExpress.XtraLayout.LayoutControl();
+            this.txtTienTrinh = new DevExpress.XtraEditors.TextEdit();
             this.richAssociationFPGrowth = new System.Windows.Forms.RichTextBox();
             this.richLargeFPGrowth = new System.Windows.Forms.RichTextBox();
             this.btnFPGrowth = new DevExpress.XtraEditors.SimpleButton();
@@ -77,6 +78,7 @@
             this.emptySpaceItem6 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem14 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem15 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem26 = new DevExpress.XtraLayout.LayoutControlItem();
             this.xtraTabPageFPGrowth = new DevExpress.XtraTab.XtraTabPage();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.btnFPG = new DevExpress.XtraEditors.SimpleButton();
@@ -102,8 +104,20 @@
             this.emptySpaceItem5 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem25 = new DevExpress.XtraLayout.LayoutControlItem();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.txtTienTrinh = new DevExpress.XtraEditors.TextEdit();
-            this.layoutControlItem26 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.xtraTabPageAprioriCaiTien = new DevExpress.XtraTab.XtraTabPage();
+            this.layoutControlAprioriCaiTien = new DevExpress.XtraLayout.LayoutControl();
+            this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.txtTimesAprioriNewSS = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlItem27 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.btnAprioriNewSS = new DevExpress.XtraEditors.SimpleButton();
+            this.layoutControlItem28 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem8 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.txtTienTrinhApriori = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlItem29 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.richLargeAprioriNewSS = new System.Windows.Forms.RichTextBox();
+            this.layoutControlItem30 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.richAssociationAprioriNewSS = new System.Windows.Forms.RichTextBox();
+            this.layoutControlItem31 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl)).BeginInit();
             this.xtraTabControl.SuspendLayout();
             this.xtraTabPageData.SuspendLayout();
@@ -138,6 +152,7 @@
             this.xtraTabPageFPGrowthSongSong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlFPGrowth)).BeginInit();
             this.layoutControlFPGrowth.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTienTrinh.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTimesFPGrowth.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroupFPGrowth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
@@ -145,6 +160,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem26)).BeginInit();
             this.xtraTabPageFPGrowth.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
@@ -165,8 +181,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTienTrinh.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem26)).BeginInit();
+            this.xtraTabPageAprioriCaiTien.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlAprioriCaiTien)).BeginInit();
+            this.layoutControlAprioriCaiTien.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTimesAprioriNewSS.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTienTrinhApriori.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem31)).BeginInit();
             this.SuspendLayout();
             // 
             // xtraTabControl
@@ -182,7 +208,8 @@
             this.xtraTabPageApriori,
             this.xtraTabPageFPGrowthSongSong,
             this.xtraTabPageFPGrowth,
-            this.xtraTabPageAprioriNew});
+            this.xtraTabPageAprioriNew,
+            this.xtraTabPageAprioriCaiTien});
             // 
             // xtraTabPageData
             // 
@@ -596,6 +623,19 @@
             this.layoutControlFPGrowth.TabIndex = 0;
             this.layoutControlFPGrowth.Text = "layoutControl1";
             // 
+            // txtTienTrinh
+            // 
+            this.txtTienTrinh.EditValue = "3";
+            this.txtTienTrinh.Location = new System.Drawing.Point(98, 12);
+            this.txtTienTrinh.Name = "txtTienTrinh";
+            this.txtTienTrinh.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTienTrinh.Properties.Appearance.Options.UseFont = true;
+            this.txtTienTrinh.Properties.Mask.EditMask = "n0";
+            this.txtTienTrinh.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.txtTienTrinh.Size = new System.Drawing.Size(68, 22);
+            this.txtTienTrinh.StyleController = this.layoutControlFPGrowth;
+            this.txtTienTrinh.TabIndex = 8;
+            // 
             // richAssociationFPGrowth
             // 
             this.richAssociationFPGrowth.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -696,6 +736,15 @@
             this.layoutControlItem15.Text = "Association Rules";
             this.layoutControlItem15.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem15.TextSize = new System.Drawing.Size(83, 13);
+            // 
+            // layoutControlItem26
+            // 
+            this.layoutControlItem26.Control = this.txtTienTrinh;
+            this.layoutControlItem26.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem26.Name = "layoutControlItem26";
+            this.layoutControlItem26.Size = new System.Drawing.Size(158, 27);
+            this.layoutControlItem26.Text = "Processes:";
+            this.layoutControlItem26.TextSize = new System.Drawing.Size(83, 13);
             // 
             // xtraTabPageFPGrowth
             // 
@@ -828,7 +877,7 @@
             this.xtraTabPageAprioriNew.Controls.Add(this.layoutControl2);
             this.xtraTabPageAprioriNew.Name = "xtraTabPageAprioriNew";
             this.xtraTabPageAprioriNew.Size = new System.Drawing.Size(778, 533);
-            this.xtraTabPageAprioriNew.Text = "Apriori New";
+            this.xtraTabPageAprioriNew.Text = "Apriori Cải tiến";
             // 
             // layoutControl2
             // 
@@ -850,10 +899,10 @@
             this.btnAprioriNew.Appearance.Options.UseFont = true;
             this.btnAprioriNew.Location = new System.Drawing.Point(256, 12);
             this.btnAprioriNew.Name = "btnAprioriNew";
-            this.btnAprioriNew.Size = new System.Drawing.Size(89, 23);
+            this.btnAprioriNew.Size = new System.Drawing.Size(94, 23);
             this.btnAprioriNew.StyleController = this.layoutControl2;
             this.btnAprioriNew.TabIndex = 7;
-            this.btnAprioriNew.Text = "Apriori New";
+            this.btnAprioriNew.Text = "Apriori Cải tiến";
             this.btnAprioriNew.Click += new System.EventHandler(this.btnAprioriNew_Click);
             // 
             // txtTimesAprioriNew
@@ -894,7 +943,7 @@
             this.layoutControlItem24,
             this.emptySpaceItem5,
             this.layoutControlItem25});
-            this.layoutControlGroupAprioriNew.Name = "layoutControlGroupAprioriNew";
+            this.layoutControlGroupAprioriNew.Name = "Root";
             this.layoutControlGroupAprioriNew.Size = new System.Drawing.Size(778, 533);
             this.layoutControlGroupAprioriNew.TextVisible = false;
             // 
@@ -934,9 +983,9 @@
             // 
             this.emptySpaceItem5.AllowHotTrack = false;
             this.emptySpaceItem5.CustomizationFormText = "emptySpaceItem1";
-            this.emptySpaceItem5.Location = new System.Drawing.Point(337, 0);
+            this.emptySpaceItem5.Location = new System.Drawing.Point(342, 0);
             this.emptySpaceItem5.Name = "emptySpaceItem5";
-            this.emptySpaceItem5.Size = new System.Drawing.Size(421, 27);
+            this.emptySpaceItem5.Size = new System.Drawing.Size(416, 27);
             this.emptySpaceItem5.Text = "emptySpaceItem1";
             this.emptySpaceItem5.TextSize = new System.Drawing.Size(0, 0);
             // 
@@ -945,7 +994,7 @@
             this.layoutControlItem25.Control = this.btnAprioriNew;
             this.layoutControlItem25.Location = new System.Drawing.Point(244, 0);
             this.layoutControlItem25.Name = "layoutControlItem25";
-            this.layoutControlItem25.Size = new System.Drawing.Size(93, 27);
+            this.layoutControlItem25.Size = new System.Drawing.Size(98, 27);
             this.layoutControlItem25.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem25.TextVisible = false;
             // 
@@ -959,27 +1008,150 @@
             this.simpleButton1.TabIndex = 7;
             this.simpleButton1.Text = "Apriori";
             // 
-            // txtTienTrinh
+            // xtraTabPageAprioriCaiTien
             // 
-            this.txtTienTrinh.EditValue = "5";
-            this.txtTienTrinh.Location = new System.Drawing.Point(98, 12);
-            this.txtTienTrinh.Name = "txtTienTrinh";
-            this.txtTienTrinh.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTienTrinh.Properties.Appearance.Options.UseFont = true;
-            this.txtTienTrinh.Properties.Mask.EditMask = "n0";
-            this.txtTienTrinh.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.txtTienTrinh.Size = new System.Drawing.Size(68, 22);
-            this.txtTienTrinh.StyleController = this.layoutControlFPGrowth;
-            this.txtTienTrinh.TabIndex = 8;
+            this.xtraTabPageAprioriCaiTien.Controls.Add(this.layoutControlAprioriCaiTien);
+            this.xtraTabPageAprioriCaiTien.Name = "xtraTabPageAprioriCaiTien";
+            this.xtraTabPageAprioriCaiTien.Size = new System.Drawing.Size(778, 533);
+            this.xtraTabPageAprioriCaiTien.Text = "Apriori Cải tiến Song song";
             // 
-            // layoutControlItem26
+            // layoutControlAprioriCaiTien
             // 
-            this.layoutControlItem26.Control = this.txtTienTrinh;
-            this.layoutControlItem26.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem26.Name = "layoutControlItem26";
-            this.layoutControlItem26.Size = new System.Drawing.Size(158, 27);
-            this.layoutControlItem26.Text = "Processes";
-            this.layoutControlItem26.TextSize = new System.Drawing.Size(83, 13);
+            this.layoutControlAprioriCaiTien.Controls.Add(this.txtTienTrinhApriori);
+            this.layoutControlAprioriCaiTien.Controls.Add(this.btnAprioriNewSS);
+            this.layoutControlAprioriCaiTien.Controls.Add(this.txtTimesAprioriNewSS);
+            this.layoutControlAprioriCaiTien.Controls.Add(this.richLargeAprioriNewSS);
+            this.layoutControlAprioriCaiTien.Controls.Add(this.richAssociationAprioriNewSS);
+            this.layoutControlAprioriCaiTien.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.layoutControlAprioriCaiTien.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlAprioriCaiTien.Name = "layoutControlAprioriCaiTien";
+            this.layoutControlAprioriCaiTien.Root = this.layoutControlGroup2;
+            this.layoutControlAprioriCaiTien.Size = new System.Drawing.Size(778, 533);
+            this.layoutControlAprioriCaiTien.TabIndex = 0;
+            this.layoutControlAprioriCaiTien.Text = "layoutControl3";
+            // 
+            // layoutControlGroup2
+            // 
+            this.layoutControlGroup2.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup2.GroupBordersVisible = false;
+            this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem27,
+            this.layoutControlItem28,
+            this.emptySpaceItem8,
+            this.layoutControlItem29,
+            this.layoutControlItem30,
+            this.layoutControlItem31});
+            this.layoutControlGroup2.Name = "layoutControlGroup2";
+            this.layoutControlGroup2.Size = new System.Drawing.Size(778, 533);
+            this.layoutControlGroup2.TextVisible = false;
+            // 
+            // txtTimesAprioriNewSS
+            // 
+            this.txtTimesAprioriNewSS.Location = new System.Drawing.Point(267, 12);
+            this.txtTimesAprioriNewSS.Name = "txtTimesAprioriNewSS";
+            this.txtTimesAprioriNewSS.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTimesAprioriNewSS.Properties.Appearance.Options.UseFont = true;
+            this.txtTimesAprioriNewSS.Size = new System.Drawing.Size(100, 22);
+            this.txtTimesAprioriNewSS.StyleController = this.layoutControlAprioriCaiTien;
+            this.txtTimesAprioriNewSS.TabIndex = 4;
+            // 
+            // layoutControlItem27
+            // 
+            this.layoutControlItem27.Control = this.txtTimesAprioriNewSS;
+            this.layoutControlItem27.Location = new System.Drawing.Point(168, 0);
+            this.layoutControlItem27.Name = "layoutControlItem27";
+            this.layoutControlItem27.Size = new System.Drawing.Size(191, 27);
+            this.layoutControlItem27.Text = "Times:";
+            this.layoutControlItem27.TextSize = new System.Drawing.Size(83, 13);
+            // 
+            // btnAprioriNewSS
+            // 
+            this.btnAprioriNewSS.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAprioriNewSS.Appearance.Options.UseFont = true;
+            this.btnAprioriNewSS.Location = new System.Drawing.Point(371, 12);
+            this.btnAprioriNewSS.Name = "btnAprioriNewSS";
+            this.btnAprioriNewSS.Size = new System.Drawing.Size(154, 23);
+            this.btnAprioriNewSS.StyleController = this.layoutControlAprioriCaiTien;
+            this.btnAprioriNewSS.TabIndex = 5;
+            this.btnAprioriNewSS.Text = "Apriori cải tiến song song";
+            this.btnAprioriNewSS.Click += new System.EventHandler(this.btnAprioriNewSS_Click);
+            // 
+            // layoutControlItem28
+            // 
+            this.layoutControlItem28.Control = this.btnAprioriNewSS;
+            this.layoutControlItem28.Location = new System.Drawing.Point(359, 0);
+            this.layoutControlItem28.Name = "layoutControlItem28";
+            this.layoutControlItem28.Size = new System.Drawing.Size(158, 27);
+            this.layoutControlItem28.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem28.TextVisible = false;
+            // 
+            // emptySpaceItem8
+            // 
+            this.emptySpaceItem8.AllowHotTrack = false;
+            this.emptySpaceItem8.Location = new System.Drawing.Point(517, 0);
+            this.emptySpaceItem8.Name = "emptySpaceItem8";
+            this.emptySpaceItem8.Size = new System.Drawing.Size(241, 27);
+            this.emptySpaceItem8.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // txtTienTrinhApriori
+            // 
+            this.txtTienTrinhApriori.EditValue = "3";
+            this.txtTienTrinhApriori.Location = new System.Drawing.Point(99, 12);
+            this.txtTienTrinhApriori.Name = "txtTienTrinhApriori";
+            this.txtTienTrinhApriori.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTienTrinhApriori.Properties.Appearance.Options.UseFont = true;
+            this.txtTienTrinhApriori.Size = new System.Drawing.Size(77, 22);
+            this.txtTienTrinhApriori.StyleController = this.layoutControlAprioriCaiTien;
+            this.txtTienTrinhApriori.TabIndex = 6;
+            // 
+            // layoutControlItem29
+            // 
+            this.layoutControlItem29.Control = this.txtTienTrinhApriori;
+            this.layoutControlItem29.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem29.Name = "layoutControlItem29";
+            this.layoutControlItem29.Size = new System.Drawing.Size(168, 27);
+            this.layoutControlItem29.Text = "Processes:";
+            this.layoutControlItem29.TextSize = new System.Drawing.Size(83, 13);
+            // 
+            // richLargeAprioriNewSS
+            // 
+            this.richLargeAprioriNewSS.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richLargeAprioriNewSS.Location = new System.Drawing.Point(12, 55);
+            this.richLargeAprioriNewSS.Name = "richLargeAprioriNewSS";
+            this.richLargeAprioriNewSS.Size = new System.Drawing.Size(754, 165);
+            this.richLargeAprioriNewSS.TabIndex = 5;
+            this.richLargeAprioriNewSS.Text = "";
+            // 
+            // layoutControlItem30
+            // 
+            this.layoutControlItem30.Control = this.richLargeAprioriNewSS;
+            this.layoutControlItem30.CustomizationFormText = "Large Itemsets";
+            this.layoutControlItem30.Location = new System.Drawing.Point(0, 27);
+            this.layoutControlItem30.Name = "layoutControlItem30";
+            this.layoutControlItem30.Size = new System.Drawing.Size(758, 185);
+            this.layoutControlItem30.Text = "Large Itemsets";
+            this.layoutControlItem30.TextLocation = DevExpress.Utils.Locations.Top;
+            this.layoutControlItem30.TextSize = new System.Drawing.Size(83, 13);
+            // 
+            // richAssociationAprioriNewSS
+            // 
+            this.richAssociationAprioriNewSS.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richAssociationAprioriNewSS.Location = new System.Drawing.Point(12, 240);
+            this.richAssociationAprioriNewSS.Name = "richAssociationAprioriNewSS";
+            this.richAssociationAprioriNewSS.Size = new System.Drawing.Size(754, 281);
+            this.richAssociationAprioriNewSS.TabIndex = 6;
+            this.richAssociationAprioriNewSS.Text = "";
+            // 
+            // layoutControlItem31
+            // 
+            this.layoutControlItem31.Control = this.richAssociationAprioriNewSS;
+            this.layoutControlItem31.CustomizationFormText = "Association Rules";
+            this.layoutControlItem31.Location = new System.Drawing.Point(0, 212);
+            this.layoutControlItem31.Name = "layoutControlItem31";
+            this.layoutControlItem31.Size = new System.Drawing.Size(758, 301);
+            this.layoutControlItem31.Text = "Association Rules";
+            this.layoutControlItem31.TextLocation = DevExpress.Utils.Locations.Top;
+            this.layoutControlItem31.TextSize = new System.Drawing.Size(83, 13);
             // 
             // FrmMain
             // 
@@ -1026,6 +1198,7 @@
             this.xtraTabPageFPGrowthSongSong.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlFPGrowth)).EndInit();
             this.layoutControlFPGrowth.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtTienTrinh.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTimesFPGrowth.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroupFPGrowth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
@@ -1033,6 +1206,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem26)).EndInit();
             this.xtraTabPageFPGrowth.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
@@ -1053,8 +1227,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTienTrinh.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem26)).EndInit();
+            this.xtraTabPageAprioriCaiTien.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlAprioriCaiTien)).EndInit();
+            this.layoutControlAprioriCaiTien.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTimesAprioriNewSS.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTienTrinhApriori.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem31)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1136,6 +1320,20 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraEditors.TextEdit txtTienTrinh;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem26;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPageAprioriCaiTien;
+        private DevExpress.XtraLayout.LayoutControl layoutControlAprioriCaiTien;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup2;
+        private DevExpress.XtraEditors.SimpleButton btnAprioriNewSS;
+        private DevExpress.XtraEditors.TextEdit txtTimesAprioriNewSS;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem27;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem28;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem8;
+        private DevExpress.XtraEditors.TextEdit txtTienTrinhApriori;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem29;
+        private System.Windows.Forms.RichTextBox richLargeAprioriNewSS;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem30;
+        private System.Windows.Forms.RichTextBox richAssociationAprioriNewSS;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem31;
     }
 }
 

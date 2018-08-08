@@ -193,6 +193,20 @@ namespace DataMining
            
             //return L;
         }
+        private void ReturnLApriori()
+        {
+            //ItemsetCollection L = new ItemsetCollection();
+            System.Diagnostics.Process process = new System.Diagnostics.Process();
+            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
+            startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+            startInfo.FileName = "MPIEXEC";
+            startInfo.Arguments = "-n " + txtTienTrinhApriori.Text + " Mpi.NET2.exe \"" + file + "\" \"" + txtSupportThreshold.Text + "\" ";
+            process.StartInfo = startInfo;
+            process.Start();
+            process.WaitForExit();
+
+            //return L;
+        }
         private void btnOpen_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -284,6 +298,54 @@ namespace DataMining
             foreach (AssociationRule rule in allRules)
             {
                 richAssociationAprioriNew.Text += rule.ToString() + "\r\n";
+            }
+        }
+
+        private void btnAprioriNewSS_Click(object sender, EventArgs e)
+        {
+            richAssociationAprioriNewSS.Text = string.Empty;
+            richLargeAprioriNewSS.Text = string.Empty;
+            // do FP-Growth
+            double supportThreshold = double.Parse(txtSupportThreshold.Text);
+            System.Diagnostics.Stopwatch calcTime = System.Diagnostics.Stopwatch.StartNew();
+            ReturnLApriori();//FPGrowthMining.DoFPGrowthParallel(db, supportThreshold);
+            txtTimesAprioriNewSS.Text = ((calcTime.ElapsedMilliseconds)) + " Milliseconds";
+
+            //
+            string[] database = null;
+            try { database = System.IO.File.ReadAllLines("OutputAprioriNew.txt"); }
+            catch { }
+            ItemsetCollection L = new ItemsetCollection();
+            Itemset items;
+            foreach (string item in database)
+            {
+                items = new Itemset();
+                string[] itemsupport = item.Split(':');
+                //items.AddRange(itemsupport[0].Split(','));
+                foreach (string it in itemsupport[0].Split(','))
+                {
+                    items.Add(int.Parse(it));
+                }
+                //items.Remove("");
+                items.Support = double.Parse(itemsupport[1]);
+                L.Add(items);
+            }
+            //
+
+            richLargeAprioriNewSS.Text = (L.Count + " Large Itemsets (by Apriori cải tiến song song)") + "\r\n";
+            foreach (Itemset itemset in L)
+            {
+                richLargeAprioriNewSS.Text += itemset.ToString() + "\r\n";
+            }
+
+            //do mining
+            double confidenceThreshold = double.Parse(txtConfidenceThreshold.Text);
+
+            List<AssociationRule> allRules = AprioriMining.Mine(db, L, confidenceThreshold);
+            richAssociationAprioriNewSS.Text = (allRules.Count + " Association Rules \n");
+            foreach (AssociationRule rule in allRules)
+            {
+                richAssociationAprioriNewSS.Text += rule.ToString() + "\r\n";
             }
         }
     }
