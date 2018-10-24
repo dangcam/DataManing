@@ -126,8 +126,7 @@ namespace DataMining.Core
             return T;
         }
         public static ItemsetCollection DoFPGrowth(ItemsetCollection db, double supportThreshold)
-        {
-           
+        {       
             
             ItemsetCollection Fre = new ItemsetCollection();//List of Items > support
             ItemsetCollection T = new ItemsetCollection();//frequent items

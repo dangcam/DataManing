@@ -111,13 +111,13 @@ namespace DataMining.Core
                 ItemsetCollection subsets = Bit.FindSubsets(itemset, 0); //get all subsets
                 foreach (Itemset subset in subsets)
                 {
-                    double confidence = (itemset.Support / db.FindSupport(subset)) * 100.0;
+                    double confidence = (db.FindSupport(itemset) / db.FindSupport(subset)) * 100.0;
                     if (confidence >= confidenceThreshold)
                     {
                         AssociationRule rule = new AssociationRule();
                         rule.X.AddRange(subset);
                         rule.Y.AddRange(itemset.Remove(subset));
-                        rule.Support = itemset.Support;// db.FindSupport(itemset);
+                        rule.Support = db.FindSupport(itemset);//itemset.Support;// db.FindSupport(itemset);
                         rule.Confidence = confidence;
                         if (rule.X.Count > 0 && rule.Y.Count > 0)
                         {
